@@ -18,7 +18,7 @@ public class A_Line_Trip{
                 a[i] = sc.nextInt();
             }
 
-            int maxDist = a[0]; // distance from 0 to first station
+            int maxDist = a[0];
 
             for (int i = 1; i < n; i++) {
                 maxDist = Math.max(maxDist, a[i] - a[i - 1]);
