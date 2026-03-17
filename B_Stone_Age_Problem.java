@@ -31,7 +31,7 @@ public class B_Stone_Age_Problem{
                     sum = sum - map.get(idx) + val;
                 }
                 map.put(idx,val);
-                pq = false;
+            
                 System.out.println(sum);
             }
         }
