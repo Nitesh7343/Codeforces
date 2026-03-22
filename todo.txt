@@ -16,4 +16,3 @@ Replace the sum
 C_shifted
 Find the differenr ones
 Array
-
