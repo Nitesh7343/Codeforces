@@ -5,30 +5,30 @@ public class A_Flip_Flops {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
-            long n = sc.nextLong();
+            int n = sc.nextInt();
             long c = sc.nextLong();
             long k = sc.nextLong();
-            PriorityQueue<Long> pq = new PriorityQueue<>();
+            //PriorityQueue<Long> pq = new PriorityQueue<>();
+            Long[] arr = new Long[n];
             for (int i = 0; i < n; i++) {
-                pq.add(sc.nextLong());
+                arr[i] = sc.nextLong();
             }
+            Arrays.sort(arr);
             boolean ans = false;
-            while (!pq.isEmpty()) {
-                long power = pq.poll();
+            for(int i = 0; i < n;i++) {
+                long power = arr[i];
                 if (power > c) {
                     System.out.println(c);
                     ans = true;
                     break;
-                } else if (power == c) {
-                    c += power;
+                }
+                
+                if (k >= c - power) {
+                    k -= (c - power);
+                    c += (power + (c - power));
                 } else {
-                    if (k >= c - power) {
-                        k -= (c - power);
-                        c += (power + (c - power));
-                    } else {
-                        c += power + k;
-                        k = 0;
-                    }
+                    c += power + k;
+                    k = 0;
                 }
             }
             if(!ans) System.out.println(c);
