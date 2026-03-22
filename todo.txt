@@ -1,4 +1,4 @@
-Flip Flop
+Flip Flop --- Done
 Cyclist
 Balanced BitString
 Bingo Cnadies
@@ -16,3 +16,4 @@ Replace the sum
 C_shifted
 Find the differenr ones
 Array
+Array Coloring
