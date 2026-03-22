@@ -22,7 +22,6 @@ public class A_Flip_Flops {
                     ans = true;
                     break;
                 }
-                
                 if (k >= c - power) {
                     k -= (c - power);
                     c += (power + (c - power));
