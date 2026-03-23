@@ -14,11 +14,11 @@ public class C_Smilo_and_Monsters {
             Arrays.sort(arr);
             long rem = sum/2;
             long ans = sum-rem;
-            // for(int i = n-1; i >= 0;i--) {
-            //     if(rem <= 0) break;
-            //     rem -= arr[i];
-            //     ans++;
-            // }
+            for(int i = n-1; i >= 0;i--) {
+                if(rem <= 0) break;
+                rem -= arr[i];
+                ans++;
+            }
             System.out.println(ans);
         }
     }
