@@ -1,7 +1,7 @@
 Flip Flop --- Done
 Cyclist
 Balanced BitString
-Bingo Cnadies
+Bingo Cnadies -- done
 DBMB and Array
 Perfecr Root
 A way too long words
@@ -15,5 +15,6 @@ Hamburger
 Replace the sum 
 C_shifted
 Find the differenr ones
-Array
-Array Coloring
+Array --done
+Array Coloring -- done
+Journey Planning 
