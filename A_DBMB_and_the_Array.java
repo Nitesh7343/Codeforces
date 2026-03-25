@@ -6,19 +6,17 @@ public class A_DBMB_and_the_Array {
         while(t-- > 0) {
             int n = sc.nextInt();
             int s = sc.nextInt();
-            int x = sc.nextInt();
-            int[] arr = new int[n];
-            int sum = 0;
-            for(int i = 0 ; i < n;i++) {
-                arr[i] = sc.nextInt();
-                sum += arr[i];
+            long x = sc.nextLong();
+            long sum  = 0;
+            for(int i = 0; i < n;i++) {
+                sum += sc.nextLong();
             }
-            int req = s - sum;
-
-            if(req%x == 0 && req >= 0) System.out.println("YES");
-            else System.out.println("NO");
-
-
+            if(sum >= s){
+                System.out.println(sum == s ? "YES" : "NO");
+                continue;
+            }
+            sum -= s;
+            System.out.println(sum%x == 0 ? "YES" : "NO");
         }
     }
 }
