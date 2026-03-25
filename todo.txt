@@ -1,11 +1,5 @@
-Flip Flop --- Done
-
 Cyclist
 Balanced BitString
-
-Bingo Cnadies -- done
-
-DBMB and Array
 Perfecr Root
 A way too long words
 Odd grasshoper
@@ -18,8 +12,12 @@ Hamburger
 Replace the sum 
 C_shifted
 Find the differenr ones
+Journey Planning 
+
+
 
 Array --done
 Array Coloring -- done
-
-Journey Planning 
+Bingo Cnadies -- done
+Flip Flop --- Done
+DBMB and Array -- Done
