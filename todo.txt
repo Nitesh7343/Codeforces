@@ -13,6 +13,7 @@ Replace the sum
 C_shifted
 Find the differenr ones
 Journey Planning 
+A game with Integers
 
 
 
