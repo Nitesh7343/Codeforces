@@ -2,14 +2,6 @@ import java.util.*;
 
 public class C_1_A_Simple_GCD_Problem_Easy_Version {
 
-    static long gcd(long a, long b) {
-        while (b != 0) {
-            long tmp = b;
-            b = a % b;
-            a = tmp;
-        }
-        return a;
-    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -91,5 +83,13 @@ public class C_1_A_Simple_GCD_Problem_Easy_Version {
 
             System.out.println(ans);
         }
+    }
+    static long gcd(long a, long b) {
+        while (b != 0) {
+            long tmp = b;
+            b = a % b;
+            a = tmp;
+        }
+        return a;
     }
 }
