@@ -11,6 +11,8 @@ public class C_1_A_Simple_GCD_Problem_Easy_Version {
         return a;
     }
 
+    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
