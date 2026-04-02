@@ -9,22 +9,8 @@ public class B_Maximum_Sum {
             long prefix[] = new long[n];
             long[] arr = new long[n];
             for(int i = 0; i < n;i++) {
-                arr[i] = sc.nextLong();
+                
             }
-            Arrays.sort(arr);
-            long sum = 0;
-            for(int i = 0; i < n;i++) {
-                sum += arr[i];
-                prefix[i] = sum;
-            }
-            long max = 0;
-            long curr = 0;
-            for(int i = 0; i <= k;i++) {
-                curr = ((k-i)*2)-1 >= 0 ? prefix[n-i-1] - prefix[((k-i)*2)-1] : prefix[n-i-1];
-                max = Math.max(max,curr);
-            }
-
-            System.out.println(max);
         }
     }
 }
