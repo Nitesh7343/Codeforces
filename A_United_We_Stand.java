@@ -11,10 +11,6 @@ public class A_United_We_Stand {
             int min = arr[0];
             List<Integer> b = new ArrayList<>();
             List<Integer> c = new ArrayList<>();
-            if(n == 1) {
-                System.out.println(-1);
-                continue;
-            }
             for(int i = 0; i < n;i++) {
                 if(arr[i] == min) b.add(arr[i]);
                 else c.add(arr[i]);

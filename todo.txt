@@ -13,11 +13,10 @@ Replace the sum
 C_shifted
 Find the differenr ones -- partilly solved
 Journey Planning 
-A game with Integers
 C_Grid_Covering
 
 
-
+A. game with Integers -- done
 Array --done
 Array Coloring -- done
 Bingo Cnadies -- done
