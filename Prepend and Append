@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int t = scanner.nextInt(); // Number of test cases
+		while (t-- > 0) {
+			long n = scanner.nextLong(); // Length of Timur's final string
+			String s = scanner.next(); // Timur's final binary string
+			// Initialize the answer to the length of the final string
+			long ans = n;
+			// Initialize pointers to the start and end of the string
+			long left = 0, right = n - 1;
+			// Iterate while the left pointer is less than or equal to the right pointer
+			while (left <= right) { // Loop runs at most n times
+				// If characters at the current pointers are different
+				if (s.charAt((int)left) != s.charAt((int)right)) {
+					ans -= 2; // Reduce the answer by 2 as these characters can be removed
+				} else {
+					break; // Stop if characters are the same
+				}
+				left++; // Move the left pointer to the right
+				right--; // Move the right pointer to the left
+			}
+			// Output the shortest possible length of the original string
+			System.out.println(ans);
+		}
+		scanner.close();
+	}
+}
+
+// Time Complexity (TC): O(n) = O(2000)
+// Space Complexity (SC): O(n) = O(2000)
