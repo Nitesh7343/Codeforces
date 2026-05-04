@@ -44,7 +44,7 @@ public class AThreeIndices {
             if(ans[2] == 0) System.out.println("NO");
             else {
                 System.out.println("YES");
-                System.out.println(ans[0]+1+" "+ ans[1]+1+" "+ans[2]+1);
+                System.out.println(ans[0]+1+" "+ (ans[1]+1)+" "+(ans[2]+1));
             }
         }
     }
