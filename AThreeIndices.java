@@ -8,7 +8,8 @@ public class AThreeIndices
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
 
-        while(t-- > 0) {
+        while(t-- > 0) 
+        {
 
             int n = sc.nextInt();
             int[] arr = new int[n];
@@ -19,7 +20,8 @@ public class AThreeIndices
 
             Deque<Integer> dq = new ArrayDeque<>();
             
-            for(int i = 0; i < n;i++) {
+            for(int i = 0; i < n;i++) 
+            {
                 while(!dq.isEmpty() && arr[dq.peek()] >= arr[i]) dq.pop();
 
                 pse[i] = dq.isEmpty() ? -1 : dq.peek();
@@ -29,7 +31,7 @@ public class AThreeIndices
             dq.clear();
 
             for(int i = n-1; i >= 0;i--) 
-                {
+            {
                 while(!dq.isEmpty() && arr[dq.peek()] >= arr[i]) dq.pop();
 
                 nse[i] = dq.isEmpty() ? -1 : dq.peek();
@@ -40,9 +42,9 @@ public class AThreeIndices
             boolean found = false;
 
             for(int i = 0; i < n;i++) 
-                {
+            {
                 if(nse[i] != -1 && pse[i] != -1) 
-                    {
+                {
                     ans[0] = pse[i];
                     ans[1] = i;
                     ans[2] = nse[i];
@@ -52,7 +54,6 @@ public class AThreeIndices
                     break;
                 }
             }
-
             if(!found) System.out.println("NO");
         }
     }
