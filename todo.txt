@@ -2,7 +2,7 @@ Cyclist
 Balanced BitString
 Perfecr Root
 A way too long words
-Odd grasshoper
+Odd grasshoper //will next
 Prefix max
 Reverse a permutation
 wow factor
