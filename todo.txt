@@ -8,7 +8,7 @@ Reverse a permutation
 wow factor
 Yuu kito minimum absolute
 Find the zero 
-Hamburger
+Hamburger //hard
 Replace the sum 
 C_shifted
 Find the differenr ones -- partilly solved
