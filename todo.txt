@@ -11,6 +11,6 @@ Find the zero
 Hamburger //hard
 Replace the sum 
 C_shifted
-Find the differenr ones -- partilly solved
+Find the differenr ones -- partilly solved // todo in try
 Journey Planning 
 C_Grid_Covering
