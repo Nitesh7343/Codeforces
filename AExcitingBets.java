@@ -12,16 +12,15 @@ public class AExcitingBets {
                 a = b;
                 b = temp;
             }
-
-            if(a == b) {
-                System.out.println(0+" "+0);
+            long gcd = 0;
+            long moves = 0;
+            
+            if(a != b) {
+                gcd = a - b;
+                moves = Math.min(b%gcd,gcd-b%gcd);
             }
-            else {
-                long gcd = a - b;
-                long moves = Math.min(b%gcd,gcd-b%gcd);
 
-                System.out.println(gcd+" "+moves);
-            }
+            System.out.println(gcd+" "+moves);
         }
     }
 }
