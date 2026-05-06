@@ -6,6 +6,12 @@ public class AExcitingBets {
         while(t-- > 0) {
             long a = sc.nextLong();
             long b = sc.nextLong();
+
+            if(b > a) {
+                long temp = a;
+                a = b;
+                b = temp;
+            }
         }
     }
 }
